@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  display: block;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+  background-color: #f9f9f9;
+}

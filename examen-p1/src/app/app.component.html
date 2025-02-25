@@ -1,0 +1,7 @@
+<h1>Task List</h1>
+
+<app-task-list-component
+  [tasks]="tasks"
+  (toggleTaskCopletedEvent)="toggleTaskCompleted($event)"
+  (deleteTaskEvent)="deleteTask($event)"
+></app-task-list-component>

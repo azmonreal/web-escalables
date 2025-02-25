@@ -1,0 +1,16 @@
+<div *ngIf="tasks.length > 0; else emptyList">
+  <p>{{ completedTasks() }} tareas completadas</p>
+  <p>{{ incompleteTasks() }} tareas incompletas</p>
+  <div *ngFor="let task of tasks">
+    <div [ngClass]="{ completed: task.completed, task: true }">
+      <p>{{ task.title }}</p>
+      <button (click)="toggleTaskComplete(task)">
+        {{ task.completed ? "Marcar incompleta" : "Marcar completa" }}
+      </button>
+      <button (click)="deleteTask(task)">Eliminar tarea</button>
+    </div>
+  </div>
+</div>
+<ng-template #emptyList>
+  <p>No hay tareas</p>
+</ng-template>
