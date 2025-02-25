@@ -1,0 +1,7 @@
+<div>
+  <h1>Product Details</h1>
+  <img [src]="product.image" alt="product.name" />
+  <p>{{ product.name }} - ${{ product.price }}</p>
+  <p>Disponible: {{ product.inStock ? "Sí" : "No" }}</p>
+  <p>En oferta: {{ product.onSale ? "Sí" : "No" }}</p>
+</div>

@@ -1,0 +1,13 @@
+.onSale {
+  color: green;
+}
+
+.product {
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 5px;
+}
+
+.product:hover {
+  background-color: #ccc;
+}

@@ -1,0 +1,4 @@
+<div [ngClass]="{ onSale: product.onSale }" class="product">
+  <p>{{ product.name }} - ${{ product.price }}</p>
+  <p *ngIf="!product.inStock" style="color: red">Agotado</p>
+</div>
